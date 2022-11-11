@@ -1,0 +1,111 @@
+@use "./variables" as *;
+
+#experience-interests{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    .title{
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 160%;
+    }
+    
+    .experience{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 40%;
+        .experience__item{
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 160%;
+            margin-top: 50px;
+            
+        }
+
+        .rectangle{
+            width: 46px;
+            height: 2px;
+            background-color: #D9BEA5;
+        }
+
+        .line{
+            width: 578px;
+            height: 1px;
+            background-color: #5C5C5C;
+        }
+    }
+
+    .interests{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 12%;
+        .interest__item{
+            font-family: $primary-font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 160%;
+            margin-top: 50px;
+        }
+
+        .rectangle{
+            width: 46px;
+            height: 2px;
+            background-color: #D9BEA5;
+        }
+
+        .line{
+            width: 578px;
+            height: 1px;
+            background-color: #5C5C5C;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+
+    #experience-interests{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+        .title{
+            font-size: 24px;
+            text-align: left;
+            margin-top: 50px;
+        }
+        .experience{
+            display: grid;
+            margin-left:10%;
+            grid-template-columns: 1fr;
+            .experience__item{
+                font-size: 16px;
+                margin-top: 50px;
+            }
+
+            .line{
+                width: 335px;
+            }
+        }
+
+
+        .interests{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 10%;
+            .interest__item{
+                font-size: 16px;
+                margin-top: 50px;
+            }
+
+            .line{
+                width: 335px;
+            }
+        }
+    }
+
+}

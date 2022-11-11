@@ -1,0 +1,91 @@
+@use "./variables" as *;
+
+#about{
+    margin-top: 10%;
+    .about__div{
+        display: grid;
+        grid-template-areas: "about img" "paragraph img";
+        margin-left: 20%;
+        margin-right: 20%;
+        
+
+        .about__h2{
+            grid-area: about;
+            font-family: $primary-font;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 160%;
+            font-style: normal;
+
+            .rectangle{
+                width: 96px;
+                height:2px;
+                background-color: #D9BEA5;
+            }
+        }
+
+        .about__img{
+            grid-area: img;
+            width: 458px;
+            height: 558px;
+            background-color: white;
+            margin-left: 10%;
+
+
+        }
+
+        .about__p{
+            grid-area: paragraph;
+            font-family: $secondary-font;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 160%;
+            width: 594px;
+
+        }
+
+
+
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+
+    #about{
+
+
+        .about__div{
+            margin-left:0;
+            display:grid;
+            grid-template-areas: "about"
+            "img" "paragraph";
+
+            .about__img{
+                width: 329px;
+                height: 401px;
+                margin-top: 50px;
+                
+            }
+            
+            .about__h2{
+                font-size: 32px;
+                text-align: left;
+                margin-left: 10%;
+                margin-top: 50px;
+            }
+
+
+
+            .about__p{
+                margin-top: 50px;
+                width:329px;
+                font-size: 16px;
+                margin-left: 10%;
+                margin-top: 50px;
+            }
+
+
+        }   
+}
+
+}

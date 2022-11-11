@@ -1,0 +1,129 @@
+@use "./variables" as *;
+@use "./component_nav";
+@use "./component_header";
+@use "./component_portofolio";
+@use "./component_experience-interests";
+@use "./component_footer";
+@use "./component_about";
+
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    background-color:#2C2A2A ;
+    color:white;
+}
+
+
+
+
+
+
+
+/*@media screen and (max-width: $tablet-breakpoint) {
+    *{
+        padding: 0;
+        margin: 0;
+      }
+    
+    .nav{
+        .nav__div{
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+
+            .nav__name{
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .nav__about{
+                display: none;
+            }
+
+            .nav__portofolio{
+                display: none;
+            }
+
+            .nav__contact{
+                display: none;
+            }
+
+
+
+        }
+    }
+    
+    header{
+        div{
+            display: flex;
+            flex-direction: column;
+    
+            .header__p{
+                text-align: left;
+                margin-right:10%;
+                margin-left:10%
+            }
+            .header__h1{
+                text-align: center;
+    
+            }
+        }
+    }
+    
+    #portofolio{
+        text-align: center;
+    
+        .projects{
+            display: grid;
+            grid-template-columns: 1fr ;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            .projects__element{
+                background-color: brown;
+            }
+        }
+    }
+    
+    #about{
+        text-align: center;
+        display:grid;
+        grid-template-columns: 1fr;
+        .about__div{
+            grid-area:"about"
+        }
+        .about__p{
+            grid-area:"paragraph";
+            margin-left:10%;
+            margin-right:10%;
+        }
+        .about__image{
+            grid-area:"image"
+        }
+    }
+    
+    #experience-interests{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+        .experience{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        .footer_images{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+        }
+    }
+    
+}*/
