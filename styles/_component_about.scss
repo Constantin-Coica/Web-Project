@@ -26,10 +26,12 @@
 
         .about__img{
             grid-area: img;
-            width: 458px;
-            height: 558px;
-            background-color: white;
+            width: 458px; 
             margin-left: 10%;
+            #Constantin-IMG{
+                max-height: 100%;
+                max-width: 100%;
+            }
 
 
         }

@@ -531,9 +531,11 @@
 #about .about__div .about__img {
   grid-area: img;
   width: 458px;
-  height: 558px;
-  background-color: white;
   margin-left: 10%;
+}
+#about .about__div .about__img #Constantin-IMG {
+  max-height: 100%;
+  max-width: 100%;
 }
 #about .about__div .about__p {
   grid-area: paragraph;
