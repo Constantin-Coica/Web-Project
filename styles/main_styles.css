@@ -4,7 +4,7 @@
 }
 .nav .nav__div {
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
   margin-top: 5%;
 }
 .nav .nav__div .nav__name {
@@ -33,7 +33,7 @@
     grid-template-columns: 4fr 1fr;
   }
   .nav .nav__div .nav__name {
-    text-align: justify;
+    text-align: left;
     margin-left: 50px;
     margin-top: 20px;
     font-size: 24px;
@@ -47,6 +47,23 @@
   }
   .nav .nav__div .nav__contact {
     display: none;
+  }
+  .nav .nav__div .nav__more_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav .nav__div .nav__more_button .rectangle-primary {
+    height: 1px;
+    width: 25px;
+    background-color: white;
+    margin-top: 15px;
+  }
+  .nav .nav__div .nav__more_button .rectangle-secondary {
+    height: 1px;
+    width: 18px;
+    background: white;
+    margin-top: 5px;
   }
 }
 .header {
@@ -142,6 +159,61 @@
   height: 1px;
   background-color: #D9BEA5;
 }
+#portofolio .projects .projects__element .buttons-paragraph {
+  display: flex;
+}
+#portofolio .projects .projects__element .buttons-paragraph .eye {
+  width: 45px;
+  height: 45px;
+  background-color: #3C3636;
+  margin-left: 35%;
+  margin-top: 15px;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 49px;
+}
+#portofolio .projects .projects__element .buttons-paragraph .arrows {
+  width: 45px;
+  height: 45px;
+  background-color: #3C3636;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 49px;
+}
+#portofolio .projects .projects__element .react-scss {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 160%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+#portofolio .projects .projects__element .react-scss .react {
+  width: 64px;
+  height: 21px;
+  background-color: #3C3636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#portofolio .projects .projects__element .react-scss .scss {
+  width: 64px;
+  height: 21px;
+  background-color: #3C3636;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
 
 @media screen and (max-width: 768px) {
   #portofolio h2 {
@@ -158,6 +230,34 @@
     width: 330px;
     height: 186px;
     margin-top: 50px;
+  }
+  #portofolio .projects .projects__element .buttons-paragraph {
+    display: flex;
+  }
+  #portofolio .projects .projects__element .buttons-paragraph .eye {
+    width: 45px;
+    height: 45px;
+    background-color: #3C3636;
+    margin-left: 25%;
+    margin-top: 15px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 49px;
+  }
+  #portofolio .projects .projects__element .buttons-paragraph .arrows {
+    width: 45px;
+    height: 45px;
+    background-color: #3C3636;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 49px;
   }
 }
 #experience-interests {
@@ -296,6 +396,46 @@
   background-color: #3B3636;
   align-items: center;
 }
+#footer .footer_images .images__linked {
+  font-size: 25px;
+  color: #D9BEA5;
+  margin-left: 10px;
+  border: 1px #453F3F solid;
+  border-radius: 44px;
+  background-color: #453F3F;
+  width: 55px;
+  height: 55px;
+}
+#footer .footer_images .images__linked .fa-brands.fa-linkedin-in {
+  margin-top: 13px;
+}
+#footer .footer_images .images__git {
+  font-size: 25px;
+  color: #D9BEA5;
+  margin-left: 10px;
+  border: 1px #453F3F solid;
+  border-radius: 44px;
+  background-color: #453F3F;
+  width: 55px;
+  height: 55px;
+}
+#footer .footer_images .images__git .fa-brands.fa-github {
+  margin-top: 13px;
+}
+#footer .footer_images .images__CV {
+  font-size: 25px;
+  font-weight: bold;
+  color: #D9BEA5;
+  margin-left: 10px;
+  border: 1px #453F3F solid;
+  border-radius: 44px;
+  background-color: #453F3F;
+  width: 55px;
+  height: 55px;
+}
+#footer .footer_images .images__CV .CV {
+  margin-top: 13px;
+}
 
 @media screen and (max-width: 768px) {
   #footer {
@@ -324,6 +464,46 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 50px;
+  }
+  #footer .footer_images .images__linked {
+    font-size: 25px;
+    color: #D9BEA5;
+    margin-left: 10px;
+    border: 1px #453F3F solid;
+    border-radius: 44px;
+    background-color: #453F3F;
+    width: 55px;
+    height: 55px;
+  }
+  #footer .footer_images .images__linked .fa-brands.fa-linkedin-in {
+    margin-top: 13px;
+  }
+  #footer .footer_images .images__git {
+    font-size: 25px;
+    color: #D9BEA5;
+    margin-left: 10px;
+    border: 1px #453F3F solid;
+    border-radius: 44px;
+    background-color: #453F3F;
+    width: 55px;
+    height: 55px;
+  }
+  #footer .footer_images .images__git .fa-brands.fa-github {
+    margin-top: 13px;
+  }
+  #footer .footer_images .images__CV {
+    font-size: 25px;
+    font-weight: bold;
+    color: #D9BEA5;
+    margin-left: 10px;
+    border: 1px #453F3F solid;
+    border-radius: 44px;
+    background-color: #453F3F;
+    width: 55px;
+    height: 55px;
+  }
+  #footer .footer_images .images__CV .CV {
+    margin-top: 13px;
   }
 }
 #about {

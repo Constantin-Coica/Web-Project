@@ -47,6 +47,52 @@
         height: 114px;
         background-color: #3B3636;
         align-items: center;
+
+        .images__linked{
+            font-size: 25px;
+            color:#D9BEA5;
+            margin-left: 10px;
+            border:1px #453F3F solid;
+            border-radius: 44px;
+            background-color: #453F3F;
+            width: 55px;
+            height: 55px;
+            .fa-brands.fa-linkedin-in{
+                margin-top: 13px;
+
+            }
+            
+        }
+        .images__git{
+            font-size: 25px;
+            color: #D9BEA5;
+            margin-left: 10px;
+            border:1px #453F3F solid;
+            border-radius: 44px;
+            background-color: #453F3F;
+            width: 55px;
+            height: 55px;
+            .fa-brands.fa-github{
+                margin-top:13px;
+            }
+        }
+
+        .images__CV{
+            font-size: 25px;
+            font-weight: bold;
+            color: #D9BEA5;
+            margin-left: 10px;
+            border:1px #453F3F solid;
+            border-radius: 44px;
+            background-color: #453F3F;
+            width: 55px;
+            height: 55px;
+            .CV{
+                margin-top: 13px;
+            }
+            
+            
+        }
     }
 }
 
@@ -83,7 +129,51 @@
             flex-direction:row;
             justify-content: center;
             margin-top: 50px;
+
+            .images__linked{
+                font-size: 25px;
+                color:#D9BEA5;
+                margin-left: 10px;
+                border:1px #453F3F solid;
+                border-radius: 44px;
+                background-color: #453F3F;
+                width: 55px;
+                height: 55px;
+                .fa-brands.fa-linkedin-in{
+                    margin-top: 13px;
+    
+                }
+                
+            }
+            .images__git{
+                font-size: 25px;
+                color: #D9BEA5;
+                margin-left: 10px;
+                border:1px #453F3F solid;
+                border-radius: 44px;
+                background-color: #453F3F;
+                width: 55px;
+                height: 55px;
+                .fa-brands.fa-github{
+                    margin-top:13px;
+                }
+            }
+    
+            .images__CV{
+                font-size: 25px;
+                font-weight: bold;
+                color: #D9BEA5;
+                margin-left: 10px;
+                border:1px #453F3F solid;
+                border-radius: 44px;
+                background-color: #453F3F;
+                width: 55px;
+                height: 55px;
+                .CV{
+                    margin-top: 13px;
+                }
         }
     }
 
+}
 }
